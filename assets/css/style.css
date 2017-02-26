@@ -1,0 +1,299 @@
+/*This is organized by type. I've tried to make the names self-explanatory, so there are fewer commnets. 
+I've commented out some mis-steps.*/
+
+
+body {
+	min-width: 960px;
+	background-image: url("../images/candyhole.png");
+	/*margin: 0px;*/
+}	
+
+h1 {
+	color: #4aaaa5;
+	font-size: 30px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #cccccc;
+    border-width: 2px;
+    padding-bottom: 10px;
+    margin: 0px 20px;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: solid #cccccc;
+    border-width: 2px;
+    padding-bottom: 20px;
+}
+
+label {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	/*padding-top: : 20px;*/
+	/*margin-top: 20px;*/
+
+}
+
+nav {
+	background-color: #ffffff;
+	height: 70px;
+	border-bottom: solid #cccccc;
+    border-width: 2px;
+	font-size: 16px;
+	/*border-bottom: red;*/
+	/*text-indent: 30px;*/
+	/*border-width: 5px;*/
+	/*vertical-align: middle;*/
+}
+
+p {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: justify;
+	padding-top: 20px;
+	margin: 0px 20px 0px 20px;
+
+	/*justify-content: left;*/
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4aaaa5;
+    /*border: 10px;*/
+    /*border-color: red;*/
+}
+
+footer {
+
+ 	position: fixed;
+ 	bottom: 0;
+ 	left: 0;
+ 	height: 60px;
+ 	/*background-color: white;*/
+ 	width: 100%;
+	float: left;
+	clear: both;
+	/*height: 30px;*/
+	color: #777777;
+	text-orientation: center;
+	background-color: #666666;
+	/*border-top: 4px;*/
+	/*border-color: solid: #4aaaa5;*/
+	/*padding-bottom: : 30px;*/
+	border-top: 4px solid #4aaaa5;
+    /*border-top: thick double #4aaaa5;*/
+
+}
+
+form {
+	padding: 20px;
+}
+
+
+
+input {
+    width: 100%;
+    color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	/*border-style: 20px;*/
+	border-color: #cccccc;
+	padding: 3px;
+}
+
+textarea {
+    width: 100%;
+    color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	/*border-style: 20px;*/
+	border-color: #cccccc;
+	padding: 3px;
+}
+
+/*This is for elements of the nav bar apart from the name*/
+.navLink {
+	float: left;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	color: #777777;
+	/*justify-content: right;*/
+	padding: 30px 10px;
+	/*border-color: red;*/
+
+}
+
+.sidebar {
+	position: absolute;
+	top: 105px;
+	left: 700px;
+	height: 110px;
+	width: 180px;
+	padding: 23px;
+	/*border: 5px;*/
+	margin: 20px;
+	background-color: #ffffff;
+
+}
+
+.icon {
+	width: 45px;
+	padding: 20px 5px 5px 5px;
+	opacity: 0.8;
+}
+
+.icon:hover {
+	opacity: 1.0;
+}
+
+.button {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    width: 160px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:select {
+   color: red
+}
+
+/*This is just jused for the name title in the nav bar*/
+#nameNav {
+	float: left;
+	position: absolute;
+	left: 70px;
+	background-color: #4aaaa5;
+	padding: 20px 30px;
+	/*border-right: 30px*/
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: : bold;
+	font-size: 30px;
+	color: #ffffff;
+	text-orientation: center;
+	border-left: 30px;
+
+
+}
+
+#nameNav:hover {
+    color: #4aaaa5;
+    background-color: #ffffff;
+}
+
+#rightNav {
+	position: absolute;
+	left: 720px;
+}
+
+/*This is just to add the little lines between the three links on the nav bar*/
+/*#portfolioNav {
+	border: dotted; #555555;
+    border-width: 0px 1px 0px 1px;
+}*/
+
+#profilePic {
+    width: 150px;
+    float: left;
+    clear: left;
+    padding: 20px;
+}
+
+#portfolioRight {
+	width: 234px;
+    float: right;
+    clear: right;
+    padding: 20px;
+}
+
+#portfolioLeft {
+	width: 234px;
+    float: left;
+    clear: left;
+    padding: 20px;
+}
+
+/*Ended up not using this and the one below -- but I think it is how */
+#portfolioRight1 {
+	background-image: url('../images/port2.jpg');
+	width: 234px;
+	height: 178px;
+    float: right;
+    clear: right;
+    padding: 20px;
+}
+
+#portfolioLeft1 {
+	background-image: url('../images/port1.jpg');
+	width: 234px;
+	height: 178px;
+    float: left;
+    clear: left;
+    padding: 20px;
+}
+
+#aboutMe {
+	position: absolute;
+	left: 50px;
+	top: 105px;
+	height: 400px;
+	width: 550px;
+	padding: 20px;
+	/*border: 5px;*/
+	margin: 20px;
+	background-color: #ffffff;
+}
+
+#portfolio {
+	position: absolute;
+	left: 50px;
+	top: 105px;
+	height: 684px;
+	width: 550px;
+	padding: 20px;
+	/*border: 5px;*/
+	margin: 20px;
+	background-color: #ffffff;
+}
+
+#contact {
+	position: absolute;
+	left: 50px;
+	top: 105px;
+	height: 500px;
+	width: 550px;
+	padding: 20px;
+	/*border: 5px;*/
+	margin: 20px;
+	background-color: #ffffff;
+}
+
+#footerText {
+	color: #cccccc;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+
+
